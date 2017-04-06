@@ -1,0 +1,37 @@
+{
+    "name": "dgame/php-ternary",
+    "description": "php ternary",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/php-ternary",
+    "keywords": [],
+    "authors": [
+        {
+            "name": "Randy Schütt",
+            "email": "rswhite4@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.*.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "Dgame\\Ternary\\": "src/",
+            "Dgame\\Ternary\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit"
+        ],
+        "coverage": [
+            "phpunit --coverage-clover=coverage"
+        ]
+    }
+}

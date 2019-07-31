@@ -3,6 +3,7 @@
 namespace Dgame\Ternary;
 
 use Exception;
+use RuntimeException;
 
 /**
  * Class Ternary
@@ -92,7 +93,7 @@ final class Ternary
         }
 
         if (!is_numeric($value)) {
-            throw new Exception('Cannot translate ' . var_export($value, true));
+            throw new RuntimeException('Cannot translate ' . var_export($value, true));
         }
 
         switch ((int) $value) {
